@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/logo.jpg" class="logo" alt="Portfolio">
+    </header>
+    <div class="titre">
+        <h2 class="text">Slider section Eyes</h2>
+        <script>
+            let text = document.querySelector('.text');
+            text.innerHTML = text.innerText.split('').map((letters, i) => `<span style="transition-delay:${i * 40}ms;filter:hue-rotate(${i * 30}deg)">${letters}</span>`).join('');
+        </script>
+    </div>
+    <div class="container3">
+        <div class="box">
+            <img src="assets/eye1.jpg.jpg"> 
+        </div>
+        <div class="box">
+            <img src="assets/eye2.jpg.jpg"> 
+        </div>
+        <div class="box">
+            <img src="assets/eye3.jpg.jpg"> 
+        </div>
+        <div class="box">
+            <img src="assets/eye4.jpg.jpg"> 
+        </div>
+        <div class="box">
+            <img src="assets/eye5.jpg.jpg"> 
+        </div>
+        <div class="box">
+            <img src="assets/eye7.jpg.jpg"> 
+        </div>
+    </div>
+    
+</body>
+</html>
